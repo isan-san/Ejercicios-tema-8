@@ -1,14 +1,29 @@
 public class App {
     public static void main(String[] args) {
-        Persona persona = new Persona();
+        Cliente cliente = new Cliente();
 
-        persona.setEdad(12);
+        cliente.setEdad(12);
 
-        persona.setNombre("Paolo Paolo");
+        cliente.setNombre("Paolo Paolo");
 
-        persona.setTelefono("1234567890");
+        cliente.setTelefono("1234567890");
 
-        System.out.println("La persona es: " + persona.getNombre() + " de edad: " + persona.getEdad() + " Y su telegofono es: " + persona.getTelefono());
+        cliente.setCredito(true);
+
+        System.out.println("La persona es: " + cliente.getNombre() + " de edad: " + cliente.getEdad() + " Y su telegofono es: " + cliente.getTelefono()+" y su es estado de credito es: "+cliente.isCredito());
+
+        Trabajador trabajador = new Trabajador();
+
+        trabajador.setEdad(87);
+
+        trabajador.setNombre("Conan Paolo");
+
+        trabajador.setTelefono("0987654321");
+
+        trabajador.setSalario(5000000);
+
+        System.out.println("La persona es: " + trabajador.getNombre() + " de edad: " + trabajador.getEdad() + " Y su telegofono es: " + trabajador.getTelefono()+" y su salario es: "+trabajador.getSalario());
+
 
     }
 }
